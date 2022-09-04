@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&display=swap');
+
+.logo {
+  height: 50px;
+}
+
+.navbar {
+  background-color: white;
+}
+
+.top {
+  padding-top: 15px;
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topcard {
+  padding: 12px 12px 12px 12px ;
+  border-radius: 10px;
+}
+
+.bottom {
+  padding-top: 15px;
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.user_table {
+  width: 100rem;
+  margin: 10px;
+}
+
+.cover {
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+  margin-top: 100px;
+}
+.home {
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .cover {
+    width: 80%;
+  }
+}
+
+.nav-link {
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: .25em;
+  display: inline-block;
+  padding: 15px;
+  position: relative;
+}
+.nav-link:hover::after {
+  width: 100%;
+  right: 0;
+}
+.nav-link:hover {
+  color: black;
+}
+
+.nav-link::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 4px;
+  right: 0;
+  position: absolute;
+  background: #002D04;
+  transition: width .5s ease 0s, right .5s ease 0s;
+  width: 0;
+}
+
+.nav {
+  float: left;
+}
+
+#home {
+  height: 95vh;
+}
+
+.home-section {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding-left: 10vw;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.home-section h1 {
+  font-size: 10ch;
+  font-weight: bold;
+}
+
+.first-name {
+  color: white;
+  text-shadow: -1px -1px 0 #002D04, 1px -1px 0 #002D04, -1px 1px 0 #002D04, 1px 1px 0 #002D04;
+}
+
+.last-name {
+  color: #002D04;
+}
+
+
+.social-share {
+  float: left;
+}
+
+.social-share li {
+  float: left;
+  color: #002D04;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 0 10px 0 10px;
+}
+
+.social-share li a {
+  color: #002D04;
+
+}
+
