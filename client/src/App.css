@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 .logo {
   height: 50px;
@@ -115,11 +116,11 @@
 
 .social-share {
   float: left;
+  padding-left: 0px;
 }
 
 .social-share li {
   float: left;
-  color: #002D04;
   display: block;
   text-align: center;
   text-decoration: none;
@@ -128,6 +129,65 @@
 
 .social-share li a {
   color: #002D04;
+}
 
+.social-share a:hover {
+  color: #526F35;
+}
+
+#about {
+  display: flex;
+  flex-wrap: inherit;
+  justify-content: space-between;
+  background-color: #002D04;
+}
+
+#about .about-one {
+  width: 30vw;
+}
+#about .about-two {
+  width: 70vw;
+  padding-left: 10vw;
+  color: white;
+}
+
+.about-two p {
+  font-size: large;
+  font-family: 'Lato', sans-serif;
+}
+
+#about h1 {
+  color: #002D04;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+  font-size: 5ch;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+section {
+  padding: 8vh 10vw 8vh 10vw;
+}
+
+#languages h4 {
+  color: white;
+  text-shadow: -1px -1px 0 #002D04, 1px -1px 0 #002D04, -1px 1px 0 #002D04, 1px 1px 0 #002D04;
+  font-size: 4ch;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
+#projects {
+  background-color: #002D04;
+  
+}
+
+button {
+  position: fixed;
+  padding: 1rem 1rem;
+}
+
+.scroll-up {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
 }
 

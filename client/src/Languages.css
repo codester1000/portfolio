@@ -1,0 +1,23 @@
+.code-card img {
+  height: 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.proficient {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.proficient h4 {
+  margin: 0 auto;  
+}
+.code-card {
+  margin: auto;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}

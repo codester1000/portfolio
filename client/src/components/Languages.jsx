@@ -1,0 +1,77 @@
+import React, { useState } from 'react'
+import Container from 'react-bootstrap/Container';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../Languages.css'
+
+const Card = ({ image, text }) => {
+  return (
+    <div className='code-card'>
+      <img src={image} />
+      <p>{text}</p>
+    </div>
+  )
+}
+
+const Languages = () => {
+  const proficientText = ["CSS", "React", "HTML", "JavaScript", "NodeJS", "MongoDB", "DiscordJs"]
+  const proficientImages = [
+    "https://camo.githubusercontent.com/edc736634dd35b0f4008e2f7db456136b9fc0e1e7a4078bb72c7352b1bdf8a7e/68747470733a2f2f776f726c64766563746f726c6f676f2e636f6d2f6c6f676f732f6373732d332e737667",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
+    "https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png",
+    "https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png",
+    "https://www.kindpng.com/picc/m/385-3850482_mongodb-logo-png-transparent-png.png",
+    "https://cdn.logojoy.com/wp-content/uploads/20210422095037/discord-mascot.png"
+  ]
+  const exploringText = ["Blender", "PostgreSQL", "VueJS", "Solidity", "Python"]
+  const exploringImages = [
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Blender_logo_no_text.svg/1200px-Blender_logo_no_text.svg.png",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1985px-Postgresql_elephant.svg.png",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Solidity_logo.svg/800px-Solidity_logo.svg.png",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/640px-Python_logo_01.svg.png"
+  ]
+
+  const proficiency = []
+  for (let i = 0; i < proficientText.length; i++) {
+    proficiency.push({
+      text: proficientText[i],
+      image: proficientImages[i]
+    })
+  }
+  const exploring = []
+  for (let i = 0; i < exploringImages.length; i++) {
+    exploring.push({
+      text: exploringText[i],
+      image: exploringImages[i]
+    })
+  }
+  const listOfProficient = proficiency.map((card) => {
+    return <Card text={card.text} image={card.image} />
+  })
+
+  const listOfExploring = exploring.map((card) => {
+    return <Card text={card.text} image={card.image} />
+  })
+
+  return (
+    <section id="languages">
+      <div className='proficient'>
+        <div className='container'>
+          {listOfProficient}
+        </div>
+        <h4>MY PROFICIENCIES</h4>
+      </div>
+      <div className='proficient'>
+        <div className='container'>
+          {listOfExploring}
+        </div>
+        <h4>WHAT I'M EXPLORING</h4>
+      </div>
+      <div>
+      </div>
+    </section>
+  )
+}
+
+export default Languages;
