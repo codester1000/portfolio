@@ -6,6 +6,9 @@
     "start": "node server.js",
     "heroku-postbuild": "cd client && npm i && npm run build"
   },
+  "engines": {
+    "node": "18.4.0"
+  },
   "name": "portfolio",
   "version": "1.0.0",
   "main": "server.js",
