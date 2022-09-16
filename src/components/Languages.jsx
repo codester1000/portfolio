@@ -56,19 +56,19 @@ const Languages = () => {
 
   return (
     <section id="languages">
-      <div className='proficient'>
-        <div className='container'>
-          {listOfProficient}
-        </div>
-        <h4>MY PROFICIENCIES</h4>
-      </div>
-      <div className='proficient'>
-        <div className='container'>
-          {listOfExploring}
-        </div>
-        <h4>WHAT I'M EXPLORING</h4>
-      </div>
       <div>
+        <div className='proficient'>
+          <div className='container'>
+            {listOfProficient}
+          </div>
+          <h4>MY PROFICIENCIES</h4>
+        </div>
+        <div className='proficient'>
+          <div className='container'>
+            {listOfExploring}
+          </div>
+          <h4>WHAT I'M EXPLORING</h4>
+        </div>
       </div>
     </section>
   )

@@ -5,24 +5,27 @@ import { Link, useParams } from 'react-router-dom'
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Scrollspy from 'react-scrollspy'
+import ScrollspyNav from "react-scrollspy-nav";
 
 const HomeNav = () => {
   return (
     <Navbar collapseOnSelect expand="lg" bg="white" className="navbar">
-      <Container>
+      <Container className='container-nav'>
         <Navbar.Brand href="/"></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
           </Nav>
           <Nav>
-            <Scrollspy className='nav' items={ ['Home', 'About', 'Languages', 'Projects'] } currentClassName="is-current">
-              <Nav.Link href="#home" className='nav-link'><li>Home</li></Nav.Link>
-              <Nav.Link href="#about" className='nav-link'><li>About</li></Nav.Link>
-              <Nav.Link href="#languages" className='nav-link'><li>Languages</li></Nav.Link>
-              <Nav.Link href="#projects" className='nav-link'><li>Projects</li></Nav.Link>
-            </Scrollspy>
+            <ScrollspyNav className='nav' scrollTargetIds={ ['home', 'about', 'languages', 'projects'] } 
+            activeNavClass="is-active"
+            scrollDuration="10"
+            currentClassName="is-current">
+                <Nav.Link href="#home" className='nav-link' data-text="Home">Home</Nav.Link>
+                <Nav.Link href="#about" className='nav-link' data-text="About">About</Nav.Link>
+                <Nav.Link href="#languages" className='nav-link' data-text="Languages">Languages</Nav.Link>
+                <Nav.Link href="#projects" className='nav-link' data-text="Projects">Projects</Nav.Link>
+            </ScrollspyNav>
           </Nav>
         </Navbar.Collapse>
       </Container>
