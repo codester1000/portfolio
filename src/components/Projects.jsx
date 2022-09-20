@@ -18,7 +18,7 @@ const SingleProject = ({ project }) => {
               <h3 class="card__title">{project.title}</h3>          
             </div>
             <ul className='social-share'>
-              <li><a href="https://github.com/codester1000" target="_blank"><BsGithub size={30} /></a></li>
+              <li><a href={project.github} target="_blank"><BsGithub size={30} /></a></li>
               {project.website && <li><a href={project.website} target="_blank"><CgWebsite size={30} /></a></li>}
               {project.discord && <li><a href={project.discord} target="_blank"><BsDiscord size={30} /></a></li>}
             </ul>  
