@@ -215,4 +215,6 @@ section {
   right: 0;
 }
 
-
+.container-nav img {
+  height: 50px;
+}

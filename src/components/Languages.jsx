@@ -7,21 +7,20 @@ const Card = ({ image, text }) => {
   return (
     <div className='code-card'>
       <img src={image} />
-      <p>{text}</p>
     </div>
   )
 }
 
 const Languages = () => {
-  const proficientText = ["CSS", "React", "HTML", "JavaScript", "NodeJS", "MongoDB", "DiscordJs"]
+  const proficientText = ["CSS", "React", "HTML", "JavaScript", "NodeJS", "MongoDB", "Illustrator"]
   const proficientImages = [
     "https://camo.githubusercontent.com/edc736634dd35b0f4008e2f7db456136b9fc0e1e7a4078bb72c7352b1bdf8a7e/68747470733a2f2f776f726c64766563746f726c6f676f2e636f6d2f6c6f676f732f6373732d332e737667",
     "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
     "https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png",
     "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png",
     "https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png",
-    "https://www.kindpng.com/picc/m/385-3850482_mongodb-logo-png-transparent-png.png",
-    "https://cdn.logojoy.com/wp-content/uploads/20210422095037/discord-mascot.png"
+    "https://www.mongodb.com/docs/assets/favicon.ico",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/512px-Adobe_Illustrator_CC_icon.svg.png"
   ]
   const exploringText = ["Blender", "PostgreSQL", "VueJS", "Solidity", "Python"]
   const exploringImages = [

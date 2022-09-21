@@ -11,11 +11,11 @@ const HomeNav = () => {
   return (
     <Navbar collapseOnSelect expand="lg" bg="white" className="navbar">
       <Container className='container-nav'>
-        <Navbar.Brand href="/"></Navbar.Brand>
+        <Navbar.Brand href="/"><img src="https://i.ibb.co/yB2wbpM/favicon-1.png"/>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            
           </Nav>
           <Nav>
             <ScrollspyNav className='nav' scrollTargetIds={ ['home', 'about', 'languages', 'projects'] } 
