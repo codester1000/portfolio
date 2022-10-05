@@ -20,4 +20,10 @@
   margin: auto;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
+  transition: all .2s ease-in-out;
+}
+
+.code-card:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.5);
 }

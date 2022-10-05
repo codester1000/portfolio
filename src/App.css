@@ -218,3 +218,13 @@ section {
 .container-nav img {
   height: 50px;
 }
+
+.logo-nav {
+  transition: all .2s ease-in-out;
+
+}
+
+.logo-nav:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.5);
+}
