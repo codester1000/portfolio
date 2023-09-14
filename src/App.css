@@ -97,6 +97,11 @@
 
 #home {
   height: 95vh;
+  background: linear-gradient(to bottom, white, white, white, white,  #002D04);
+}
+
+#about {
+
 }
 
 .home-section {
@@ -167,10 +172,11 @@
 }
 
 #about h1 {
-  color: #002D04;
-  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
-  font-size: 5ch;
-  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  /* text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white; */
+  font-size: 3.75rem;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-weight: 300;
 }
 
 section {
@@ -178,17 +184,12 @@ section {
 }
 
 #languages h4 {
-  color: white;
-  text-shadow: -1px -1px 0 #002D04, 1px -1px 0 #002D04, -1px 1px 0 #002D04, 1px 1px 0 #002D04;
+  color: #002D04;
   font-size: 4ch;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-weight: 300;
 }
 
-
-#projects {
-  background-color: #002D04;
-  
-}
 
 button {
   position: fixed;
@@ -227,4 +228,20 @@ section {
 .logo-nav:hover {
   transition: all .2s ease-in-out;
   transform: scale(1.5);
+}
+
+/* CSS for the Banner component */
+.home-section {
+  display: flex; /* Use flexbox to arrange the content horizontally */
+  justify-content: space-between; /* Space the content evenly */
+  align-items: center; /* Center vertically */
+
+}
+
+.left-section {
+  flex: 1; /* Make the left section take up all available horizontal space */
+}
+
+.right-section {
+  flex: 1; /* Make the right section take up all available horizontal space */
 }
