@@ -63,7 +63,7 @@ const Languages = () => {
           </div>
           <h4>MY PROFICIENCIES</h4>
         </div>
-        <div className='proficient'>
+        <div className='proficient' style={{paddingTop: "50px"}}>
           <div className='container'>
             {listOfExploring}
           </div>
