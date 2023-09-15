@@ -11,6 +11,7 @@ function Model({ open, hinge, ...props }) {
   const group = useRef()
   // Load model
   const { nodes, materials } = useGLTF(ThisLaptop)
+  console.log(nodes['Cube008'].geometry)
   // Take care of cursor state on hover
   const [hovered, setHovered] = useState(false)
   useEffect(() => void (document.body.style.cursor = hovered ? 'pointer' : 'auto'), [hovered])
