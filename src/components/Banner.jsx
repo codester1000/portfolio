@@ -22,7 +22,7 @@ const Banner = () => {
           </ul>
         </div>
         <div className="right-section">
-          {/* <Laptop /> */}
+          <Laptop />
         </div>
       </div>
 

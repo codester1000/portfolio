@@ -7,11 +7,13 @@ import { a as three } from '@react-spring/three'
 import { a as web } from '@react-spring/web'
 import ThisLaptop from '../mac-draco.glb'
 
+
+
 function Model({ open, hinge, ...props }) {
   const group = useRef()
-  // Load model
   const { nodes, materials } = useGLTF(ThisLaptop)
-  console.log(nodes['Cube008'].geometry)
+
+
   // Take care of cursor state on hover
   const [hovered, setHovered] = useState(false)
   useEffect(() => void (document.body.style.cursor = hovered ? 'pointer' : 'auto'), [hovered])
