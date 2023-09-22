@@ -19,7 +19,7 @@ const AllProjects = () => {
             <Box width="100%">
               <Paper elevation={0}>
                 <img
-                  src="https://i.ibb.co/Ssw3w9S/Screen-Shot-2022-09-07-at-1-19-47-pm.png"
+                  src="https://i.ibb.co/J7wdK9b/Screen-Shot-2023-09-22-at-6-23-16-pm.png"
                   alt="SurfaceBot"
                   width="100%"
                   style={{ borderRadius: '20px' }}
