@@ -14,8 +14,8 @@ const AllProjects = () => {
         gap={10}
       >
         {/* 1st Section */}
-        <Stack gap={3} direction="row" width="100%">
-          <Stack gap={2} width="50%">
+        <Stack gap={3} direction={{xs: "column", md: "row"}} width="100%">
+          <Stack gap={2} width={{xs: "100%" ,md: "50%"}}>
             <Box width="100%">
               <Paper elevation={0}>
                 <img
@@ -51,8 +51,8 @@ const AllProjects = () => {
               </IconButton>
             </Stack>
           </Stack>
-          <Stack gap={0} width="50%" >
-            <Typography variant="h2" textTransform="uppercase" >
+          <Stack gap={0} width={{sm: "100%", md: "50%"}} >
+            <Typography variant="h2" textTransform="uppercase" fontSize={{xs: "48px", md: ""}}>
               SurfaceBot
             </Typography>
             <Typography maxWidth="460px" variant="body2" paddingTop={3}>
@@ -65,9 +65,10 @@ const AllProjects = () => {
         </Stack>
 
         {/* 2nd SECTION */}
-        <Stack gap={3} direction="row" width="100%">
-          <Stack gap={0} width="50%" alignItems="end" justifyContent="">
-            <Typography variant="h2" textTransform="uppercase">
+        
+        <Stack gap={3} direction={{xs: "column-reverse", md: "row"}} width="100%">
+          <Stack gap={2} width={{xs: "100%" ,md: "50%"}}>
+            <Typography variant="h2" textTransform="uppercase" fontSize={{xs: "48px", md: ""}}>
               ReelyApp
             </Typography>
             <Typography maxWidth="460px" variant="body2" paddingTop={3}>
@@ -77,7 +78,7 @@ const AllProjects = () => {
               I helped develop this generative AI application, working on both the backend and frontend development. I learned a lot about LLMs and how to integrate them, this broadened my horizons and really helped me understand how to develop with AI. I solely developed the home page of the website, working from a design brief, using MUI, TypeScript and React Scroll Parallax for the first time.
             </Typography>
           </Stack>
-          <Stack gap={0} width="50%">
+          <Stack gap={2} width={{sm: "100%", md: "50%"}} >
             <Box>
               <Paper elevation={0}>
                 <img
@@ -93,8 +94,8 @@ const AllProjects = () => {
         </Stack>
 
         {/* 3rd Section */}
-        <Stack gap={3} direction="row" width="100%">
-          <Stack gap={1} width="50%">
+        <Stack gap={3} direction={{xs: "column", md: "row"}} width="100%">
+          <Stack gap={2} width={{sm: "100%", md: "50%"}} >
             <Box>
               <Paper elevation={0}>
                   <img
@@ -116,8 +117,8 @@ const AllProjects = () => {
               </IconButton>
             </Stack>
           </Stack>
-          <Stack gap={0} width="50%">
-            <Typography variant="h2" textTransform="uppercase">
+          <Stack gap={0} width={{sm: "100%", md: "50%"}} >
+            <Typography variant="h2" textTransform="uppercase" fontSize={{xs: "48px", md: ""}}>
               Jello
             </Typography>
             <Typography maxWidth="460px" variant="body2" paddingTop={3}>

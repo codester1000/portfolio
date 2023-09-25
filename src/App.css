@@ -98,6 +98,8 @@
 #home {
   height: 95vh;
   background: linear-gradient(to bottom, white, white, white, white,  #002D04);
+  width: 100vw;
+
 }
 
 #about {
@@ -122,6 +124,22 @@
 .first-name {
   color: white;
   text-shadow: -1px -1px 0 #002D04, 1px -1px 0 #002D04, -1px 1px 0 #002D04, 1px 1px 0 #002D04;
+}
+
+
+@media (max-width: 900px) {
+  .home-section h1 {
+    font-size: 50px;
+    font-weight: bold;
+  }
+  #home {
+    height: 60vh;
+    -ms-transform: translateY(-0%);
+    transform: translateY(-0%);
+  }
+  .home-section {
+    padding-left: 0;
+  }
 }
 
 .last-name {
@@ -179,6 +197,19 @@
   font-weight: 300;
 }
 
+@media (max-width: 900px) {
+  #about {
+    flex-direction: column; /* Change to column for stacking */
+    align-items: center; /* Center items when stacked */
+  }
+  #about .about-one {
+    width: 100%;
+  }
+  #about .about-two {
+    width: 100%;
+    padding-left: 0;
+  }
+}
 section {
   padding: 8vh 10vw 8vh 10vw;
 }

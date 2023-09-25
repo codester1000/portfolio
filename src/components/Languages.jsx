@@ -2,12 +2,15 @@ import React, { useState } from 'react'
 import Container from 'react-bootstrap/Container';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../Languages.css'
+import { Grid, Stack, Typography } from '@mui/material';
 
 const Card = ({ image, text }) => {
   return (
-    <div className='code-card'>
-      <img alt={text} src={image} />
-    </div>
+    <Grid item xs={4} sm={4} md={2} lg={2}>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%', marginBottom: '16px' }}>
+        <img width="60%" alt={text} src={image} />
+      </div>
+    </Grid>
   )
 }
 
@@ -24,12 +27,13 @@ const Languages = () => {
     "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/640px-Python_logo_01.svg.png",
     "https://www.svgrepo.com/show/306500/openai.svg"
   ]
-  const exploringText = ["Blender", "PostgreSQL", "VueJS", "AWS"]
+  const exploringText = ["Blender", "PostgreSQL", "VueJS", "AWS", "Langchain"]
   const exploringImages = [
     "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Blender_logo_no_text.svg/1200px-Blender_logo_no_text.svg.png",
     "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1985px-Postgresql_elephant.svg.png",
     "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png",
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png"
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png",
+    "https://www.mlq.ai/content/images/2023/06/Screenshot-2023-06-15-at-8.15.36-PM.png"
     ]
 
   const proficiency = []
@@ -54,21 +58,25 @@ const Languages = () => {
     return <Card key={card.text} text={card.text} image={card.image} />
   })
 
+  
+
   return (
     <section id="languages">
       <div>
-        <div className='proficient'>
-          <div className='container'>
+        <Stack direction={{xs: "column",md: "row"}} spacing={{xs: 1, md: 2}}>
+          <Typography variant="h4" fontSize={{xs: "20px", md: ""}} width={{xs: "100%",md: "40vw"}}>MY PROFICIENCIES</Typography>
+
+          <Grid container spacingY={4} width={{xs: "100%",md: "60vw"}}>
             {listOfProficient}
-          </div>
-          <h4>MY PROFICIENCIES</h4>
-        </div>
-        <div className='proficient' style={{paddingTop: "50px"}}>
-          <div className='container'>
-            {listOfExploring}
-          </div>
-          <h4>WHAT I'M EXPLORING</h4>
-        </div>
+          </Grid>
+        </Stack>
+        <Stack direction={{xs: "column",md: "row"}} spacing={{xs: 1, md: 2}} sx={{marginTop: 10}}>
+          <Typography variant="h4" fontSize={{xs: "20px", md: ""}} width={{xs: "100%",md: "40vw"}} textAlign={{xs: '', md: "center" }}>WHAT I'M EXPLORING</Typography>
+
+        <Grid container spacingY={5} my={4} width={{xs: "100%",md: "60vw"}}>
+          {listOfExploring}
+        </Grid>
+        </Stack>
       </div>
     </section>
   )

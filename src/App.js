@@ -9,6 +9,7 @@ import "./App.css";
 import ScrollspyNav from "react-scrollspy-nav";
 import AllProjects from "./components/AllProjects";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import Hidden from "@mui/material/Hidden";
 
 function App() {
   const theme = createTheme({
@@ -21,9 +22,11 @@ function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <header>
-          <HomeNav />
-        </header>
+        <Hidden lgDown>
+          <header>
+            <HomeNav />
+          </header>
+        </Hidden>
         <main>
           <Banner />
           <About />
