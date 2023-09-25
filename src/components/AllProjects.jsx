@@ -52,7 +52,7 @@ const AllProjects = () => {
             </Stack>
           </Stack>
           <Stack gap={0} width={{sm: "100%", md: "50%"}} >
-            <Typography variant="h2" textTransform="uppercase" fontSize={{xs: "48px", md: ""}}>
+            <Typography variant="h2" textTransform="uppercase" fontSize={{xs: "48px", md: "60px"}}>
               SurfaceBot
             </Typography>
             <Typography maxWidth="460px" variant="body2" paddingTop={3}>
@@ -68,7 +68,7 @@ const AllProjects = () => {
         
         <Stack gap={3} direction={{xs: "column-reverse", md: "row"}} width="100%">
           <Stack gap={2} width={{xs: "100%" ,md: "50%"}}>
-            <Typography variant="h2" textTransform="uppercase" fontSize={{xs: "48px", md: ""}}>
+            <Typography variant="h2" textTransform="uppercase" fontSize={{xs: "48px", md: "60px"}}>
               ReelyApp
             </Typography>
             <Typography maxWidth="460px" variant="body2" paddingTop={3}>
@@ -118,7 +118,7 @@ const AllProjects = () => {
             </Stack>
           </Stack>
           <Stack gap={0} width={{sm: "100%", md: "50%"}} >
-            <Typography variant="h2" textTransform="uppercase" fontSize={{xs: "48px", md: ""}}>
+            <Typography variant="h2" textTransform="uppercase" fontSize={{xs: "48px", md: "60px"}}>
               Jello
             </Typography>
             <Typography maxWidth="460px" variant="body2" paddingTop={3}>
